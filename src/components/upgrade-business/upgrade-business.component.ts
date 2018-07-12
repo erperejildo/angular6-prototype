@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-upgrade-business',
   templateUrl: './upgrade-business.component.html',
   styleUrls: ['./upgrade-business.component.scss']
 })
-export class UpgradeBusinessComponent implements OnInit {
+export class UpgradeBusinessComponent {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }
