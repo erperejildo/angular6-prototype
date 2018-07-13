@@ -1,5 +1,6 @@
-Home
-
-<a routerLink="/upgrade" routerLinkActive="active">Upgrade</a>
+<nav>
+  <a routerLink='' routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+  <a routerLink='/upgrade' routerLinkActive="active">Upgrade</a>
+</nav>
 
 <router-outlet></router-outlet>
