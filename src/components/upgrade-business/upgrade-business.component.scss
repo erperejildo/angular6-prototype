@@ -1,0 +1,24 @@
+.upgrade-business {
+  color: #fff;
+  max-width: 300px;
+  padding: 20px;
+  margin: auto;
+  background: #2E5678;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #748DA3, #2E5678);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #748DA3, #2E5678);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  h1,
+  h3 {
+    font-weight: normal;
+  }
+  .one-way {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    margin-top: 2rem;
+  }
+  .btn {
+    color: #519CD9;
+  }
+}

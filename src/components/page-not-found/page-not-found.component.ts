@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -6,15 +6,21 @@ import { Router } from '@angular/router';
   templateUrl: './page-not-found.component.html',
   styleUrls: ['./page-not-found.component.scss']
 })
-export class PageNotFoundComponent {
+export class PageNotFoundComponent implements OnDestroy {
   seconds = 5;
+  interval: any;
 
   constructor(private router: Router) {
     this.countdown();
   }
 
+  public ngOnDestroy() {
+    // leaving page
+    clearInterval(this.interval);
+  }
+
   countdown() {
-    setInterval(() => {
+    this.interval = setInterval(() => {
       this.seconds--;
       if (this.seconds === 0) {
         this.router.navigate(['/']);
