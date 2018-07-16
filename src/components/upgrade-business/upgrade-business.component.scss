@@ -1,7 +1,7 @@
 .upgrade-business {
   color: #fff;
   max-width: 300px;
-  padding: 20px;
+  height: 400px;
   margin: auto;
   background: #2E5678;
   /* fallback for old browsers */
@@ -9,9 +9,19 @@
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to bottom, #748DA3, #2E5678);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow: hidden;
+  position: relative;
   h1,
   h3 {
     font-weight: normal;
+  }
+  .step {
+    // float: left;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    left: 0;
   }
   .one-way {
     text-transform: uppercase;

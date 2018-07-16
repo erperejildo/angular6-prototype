@@ -7,18 +7,25 @@ import { AnimationService, AnimationBuilder } from 'css-animator';
   styleUrls: ['./upgrade-business.component.scss']
 })
 export class UpgradeBusinessComponent {
-  @ViewChild('imgModeElem') imgModeElem: ElementRef;
-  animator: AnimationBuilder;
+  @ViewChild('step1') step1: ElementRef;
+  @ViewChild('step2') step2: ElementRef;
+  animator1: AnimationBuilder;
+  animator2: AnimationBuilder;
 
   constructor(animationService: AnimationService) {
-    this.animator = animationService.builder();
-    this.animator.pin = false;
-    this.animator.reject = false;
+    this.animator1 = animationService.builder();
+    this.animator1.pin = false;
+    this.animator1.reject = false;
+    // we created 2 cause we need 2 different animations at the same time
+    this.animator2 = animationService.builder();
+    this.animator2.pin = false;
+    this.animator2.reject = false;
   }
 
   animate() {
-    this.animator.setType('bounce').animate(this.imgModeElem.nativeElement).then(() => {
+    this.animator1.setType('slideOutLeft').hide(this.step1.nativeElement).then(() => {
       // Animation finished
     });
+    this.animator2.setType('slideInRight').show(this.step2.nativeElement);
   }
 }
