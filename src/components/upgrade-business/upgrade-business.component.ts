@@ -10,6 +10,8 @@ export class UpgradeBusinessComponent {
   @ViewChild('step1') step1: ElementRef;
   @ViewChild('step2') step2: ElementRef;
   @ViewChild('step3') step3: ElementRef;
+  @ViewChild('checkIcon') checkIcon: ElementRef;
+  @ViewChild('updatedMessage') updatedMessage: ElementRef;
   animator1: AnimationBuilder;
   animator2: AnimationBuilder;
   upgradeOptions: Array<object>;
@@ -42,9 +44,7 @@ export class UpgradeBusinessComponent {
   }
 
   animate() {
-    this.animator1.setType('slideOutLeft').hide(this.step1.nativeElement).then(() => {
-      // Animation finished
-    });
+    this.animator1.setType('slideOutLeft').hide(this.step1.nativeElement);
     this.animator2.setType('slideInRight').show(this.step2.nativeElement);
   }
 
@@ -55,6 +55,10 @@ export class UpgradeBusinessComponent {
 
   finishUpgrade() {
     this.animator1.setType('slideOutLeft').hide(this.step2.nativeElement);
-    this.animator2.setType('slideInRight').show(this.step3.nativeElement);
+    this.animator2.setType('slideInRight').show(this.step3.nativeElement).then(() => {
+      this.animator1.setType('rotateIn').show(this.checkIcon.nativeElement).then(() => {
+        this.animator1.setType('bounceIn').show(this.updatedMessage.nativeElement);
+      });
+    });
   }
 }
