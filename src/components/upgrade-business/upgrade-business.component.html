@@ -14,6 +14,7 @@
       <button type="button" class="btn btn-light btn-block" (click)="animate()">Show me more</button>
     </footer>
   </div>
+
   <div class="step step2" #step2 hidden>
     <h5>Upgrade to business</h5>
     <ul class="list-unstyled font-s">
@@ -38,6 +39,11 @@
       </div>
     </div>
 
-    <button type="button" class="btn btn-light btn-block mt-3" [disabled]="!selectedUpgradeOption" (click)="finishUpgrade()">Upgrade now</button>
+    <button type="button" class="btn btn-outline-light btn-block mt-3" [hidden]="selectedUpgradeOption" (click)="finishUpgrade()">I don't want to upgrade</button>
+    <button type="button" class="btn btn-light btn-block mt-3" [hidden]="selectedUpgradeOption === undefined" (click)="finishUpgrade()">Upgrade now</button>
+  </div>
+
+  <div class="step step3" #step3 hidden>
+    Last step
   </div>
 </div>

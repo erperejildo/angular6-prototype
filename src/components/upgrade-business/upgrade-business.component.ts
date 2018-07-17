@@ -9,10 +9,11 @@ import { AnimationService, AnimationBuilder } from 'css-animator';
 export class UpgradeBusinessComponent {
   @ViewChild('step1') step1: ElementRef;
   @ViewChild('step2') step2: ElementRef;
+  @ViewChild('step3') step3: ElementRef;
   animator1: AnimationBuilder;
   animator2: AnimationBuilder;
   upgradeOptions: Array<object>;
-  selectedUpgradeOption: 0;
+  selectedUpgradeOption: number;
 
   constructor(animationService: AnimationService) {
     this.animator1 = animationService.builder();
@@ -50,5 +51,10 @@ export class UpgradeBusinessComponent {
   selectUpgradeOption(index) {
     this.selectedUpgradeOption = index;
     console.log('option selected: ', this.upgradeOptions[index]);
+  }
+
+  finishUpgrade() {
+    this.animator1.setType('slideOutLeft').hide(this.step2.nativeElement);
+    this.animator2.setType('slideInRight').show(this.step3.nativeElement);
   }
 }

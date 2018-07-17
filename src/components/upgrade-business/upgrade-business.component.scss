@@ -50,4 +50,10 @@
     padding-left: 0;
     align-self: center;
   }
+  .btn-outline-light {
+    color: #fff;
+    &:hover {
+      color: #519CD9;
+    }
+  }
 }
