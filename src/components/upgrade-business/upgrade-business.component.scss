@@ -1,3 +1,4 @@
+@import "../../theme/fonts";
 .upgrade-business {
   color: #fff;
   max-width: 300px;
@@ -30,5 +31,23 @@
   }
   .btn {
     color: #519CD9;
+  }
+  .row {
+    cursor: pointer;
+    border: 1px solid transparent; // avoid jump when clicking
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    &.active {
+      border: 1px solid #fff;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  }
+  .col-6 {
+    padding-right: 0;
+    padding-left: 0;
+    align-self: center;
   }
 }
