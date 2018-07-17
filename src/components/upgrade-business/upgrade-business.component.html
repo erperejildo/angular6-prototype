@@ -2,10 +2,10 @@
   <div class="step step1" #step1>
     <h3>Upgrade to business</h3>
 
-    <div class="one-way">one way from</div>
-    <h1>£189</h1>
+    <div class="one-way mt-5 font-s">one way from</div>
+    <div class="font-xxl">£189</div>
 
-    <ul class="list-unstyled">
+    <ul class="list-unstyled mt-3 mb-4">
       <li>FREE 2 x 32kg checked bags</li>
       <li>complimentary food and drinks</li>
       <li>lounge access</li>
@@ -17,7 +17,7 @@
 
   <div class="step step2" #step2 hidden>
     <h5>Upgrade to business</h5>
-    <ul class="list-unstyled font-s">
+    <ul class="list-unstyled font-s mt-4">
       <li>FREE 2 x 32kg checked bags</li>
       <li>complimentary food and drinks</li>
       <li>lounge access</li>
@@ -39,11 +39,20 @@
       </div>
     </div>
 
-    <button type="button" class="btn btn-outline-light btn-block mt-3" [hidden]="selectedUpgradeOption" (click)="finishUpgrade()">I don't want to upgrade</button>
+    <button type="button" class="btn btn-outline-light btn-block mt-3" [hidden]="selectedUpgradeOption !== undefined" (click)="finishUpgrade()">I don't want to upgrade</button>
     <button type="button" class="btn btn-light btn-block mt-3" [hidden]="selectedUpgradeOption === undefined" (click)="finishUpgrade()">Upgrade now</button>
   </div>
 
   <div class="step step3" #step3 hidden>
-    Last step
+    <h4>Upgrade to business</h4>
+    <ul class="list-unstyled font-s mt-4">
+      <li>FREE 2 x 32kg checked bags</li>
+      <li>complimentary food and drinks</li>
+      <li>lounge access</li>
+    </ul>
+
+    <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+
   </div>
 </div>
