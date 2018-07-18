@@ -16,3 +16,11 @@ body {
 nav a.active {
   color: #039be5;
 }
+
+.nav-link2 {
+  color: rgba(0, 0, 0, 0.5);
+  &:hover {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+  }
+}

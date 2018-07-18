@@ -1,1 +1,23 @@
-
+.navbar2 {
+  background-color: #f8f9fa;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  .navbar-nav2 {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    .nav-link2 {
+      display: block;
+      padding: 0.5rem;
+    }
+    .active .nav-link2 {
+      color: rgba(0, 0, 0, 0.9);
+    }
+  }
+}
