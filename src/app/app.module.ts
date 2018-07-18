@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { AnimatorModule } from 'css-animator';
 
 import { AppComponent } from './app.component';
-// routing
 import { AppRoutingModule, routingComponents } from '../routing/app-routing.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { AppRoutingModule, routingComponents } from '../routing/app-routing.modu
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AnimatorModule
+    AnimatorModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
