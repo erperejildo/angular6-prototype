@@ -1,10 +1,10 @@
 # British Airways PoC
 
-This PoC to demostrate how to integrate new projects/components such Angular or React into AngularJS.
+The objective of this PoC is to demostrate how to integrate new projects/components such Angular or React into AngularJS.
 
 ## Run projects
 
-Enter on the different folders to read the documentation
+Enter in the different folders to read the documentation
 
 ## Versions ussed
 
