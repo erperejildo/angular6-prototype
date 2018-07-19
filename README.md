@@ -6,7 +6,7 @@ The objective of this PoC is to demostrate how to integrate new projects/compone
 
 Enter in the different folders to read the documentation
 
-## Versions ussed
+## Versions used
 
 - AngularJS 1.5
 - Angular 6
