@@ -1,0 +1,16 @@
+html,
+body {
+  height: 100%
+}
+
+.container-fluid {
+  margin-top: 1rem;
+}
+
+nav a.active {
+  color: #039be5;
+}
+
+.active {
+  color: black;
+}
