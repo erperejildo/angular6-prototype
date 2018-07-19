@@ -4,7 +4,7 @@ The objective of this PoC is to demostrate how to integrate new projects/compone
 
 ## Run projects
 
-Enter in the different folders to read the documentation
+Enter in the different folders to read the documentation and have all of them running at the same time.
 
 ## Versions used
 
