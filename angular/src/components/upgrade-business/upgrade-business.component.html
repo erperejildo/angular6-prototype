@@ -1,57 +1,57 @@
-<div class="upgrade-business text-center">
+<div class="upgrade-business">
   <div class="step step1" #step1>
-    <h3>Upgrade to business</h3>
+    <div class="font-xxl">Upgrade
+      <br />to business</div>
 
-    <div class="one-way mt-5 font-s">one way from</div>
-    <div class="font-xxl">£189</div>
+    <div class="one-way font-s">one way from</div>
+    <div class="font-xxxl">£189</div>
 
-    <ul class="list-unstyled mt-3 mb-4">
+    <ul class="space">
       <li>FREE 2 x 32kg checked bags</li>
       <li>complimentary food and drinks</li>
       <li>lounge access</li>
     </ul>
     <footer>
-      <button type="button" class="btn btn-light btn-block" (click)="animate()">Show me more</button>
+      <button type="button" class="btn" (click)="animate()">Show me more</button>
     </footer>
   </div>
 
   <div class="step step2" #step2 hidden>
-    <h5>Upgrade to business</h5>
-    <ul class="list-unstyled font-s mt-4">
+    <div class="font-xl">Upgrade to business</div>
+    <ul class="space font-s">
       <li>FREE 2 x 32kg checked bags</li>
       <li>complimentary food and drinks</li>
       <li>lounge access</li>
     </ul>
 
-    <div class="row" [ngClass]="{'active' : i === selectedUpgradeOption}" *ngFor="let option of upgradeOptions; let i = index"
-      (click)="selectUpgradeOption(i)">
-      <div class="col-2">
-        <div class="form-check">
+    <div class="grid">
+      <div class="row" [ngClass]="{'active' : i === selectedUpgradeOption}" *ngFor="let option of upgradeOptions; let i = index"
+        (click)="selectUpgradeOption(i)">
+        <div class="col col-s">
           <input class="form-check-input" type="radio" name="upgradeOptions" [value]="index" [checked]="i === selectedUpgradeOption">
         </div>
-      </div>
-      <div class="col-6 text-left font-s">
-        {{option.description}}
-      </div>
-      <div class="col-4 text-right">
-        <span class="font-l">£{{option.price}}</span>
-        <span class="font-xs">pp</span>
+        <div class="col col-l text-left">
+          {{ option.description }}
+        </div>
+        <div class="col col-m">
+          <span class="font-l">£{{ option.price }}</span>
+          <span class="font-xs">pp</span>
+        </div>
       </div>
     </div>
-
-    <button type="button" class="btn btn-outline-light btn-block mt-3" [hidden]="selectedUpgradeOption !== undefined" (click)="finishUpgrade()">I don't want to upgrade</button>
-    <button type="button" class="btn btn-light btn-block mt-3" [hidden]="selectedUpgradeOption === undefined" (click)="finishUpgrade()">Upgrade now</button>
+    <button type="button" class="btn btn-light space" *ngIf="selectedUpgradeOption === undefined" (click)="finishUpgrade()">I don't want to upgrade</button>
+    <button type="button" class="btn space" *ngIf="selectedUpgradeOption !== undefined" (click)="finishUpgrade()">Upgrade now</button>
   </div>
 
   <div class="step step3" #step3 hidden>
-    <h4>Upgrade to business</h4>
-    <ul class="list-unstyled font-s mt-4">
+    <div class="font-l">Upgrade to business</div>
+    <ul class="font-s space">
       <li>FREE 2 x 32kg checked bags</li>
       <li>complimentary food and drinks</li>
       <li>lounge access</li>
     </ul>
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/2000px-White_check.svg.png" class="check mt-4 mb-2"
+    <img class="check" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/2000px-White_check.svg.png"
       #checkIcon hidden>
     <div class="font-s" #updatedMessage hidden>Outbound flight upgraded</div>
   </div>
