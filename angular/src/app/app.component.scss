@@ -1,4 +1,4 @@
-.navbar {
+.menu {
   background-color: #f8f9fa;
   position: relative;
   display: flex;
@@ -6,16 +6,16 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
-  .navbar-nav {
+  .menu-nav {
     display: flex;
     flex-direction: row;
     padding-left: 0;
     margin-bottom: 0;
-    .nav-link {
+    .menu-link {
       display: block;
       padding: 0.5rem;
     }
-    .active .nav-link {
+    .active .menu-link {
       color: rgba(0, 0, 0, 0.9);
     }
   }

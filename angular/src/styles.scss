@@ -1,8 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "~font-awesome/css/font-awesome.css";
 @import "~animate.css/animate";
-@import "./theme/variables";
+@import "../theme/fonts";
 * {
   margin: 0;
   padding: 0;
@@ -11,23 +10,27 @@
 html,
 body {
   height: 100%;
+  font-size: 100%;
 }
 
 body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
+  font-size: 16px;
 }
 
 .container {
   margin: 20px;
 }
 
-.nav-link {
+.menu-link {
   color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
+  cursor: pointer;
   &:hover {
     color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
   }
 }
 

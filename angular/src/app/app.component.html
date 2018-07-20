@@ -1,13 +1,17 @@
-<nav class="navbar">
-  <ul class="navbar-nav">
+<nav class="menu">
+  <ul class="menu-nav">
     <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-      <a class="nav-link" routerLink=''>Home</a>
+      <a class="menu-link" routerLink=''>Home</a>
     </li>
     <li routerLinkActive="active">
-      <a class="nav-link" routerLink='/upgrade'>Upgrade</a>
+      <a class="menu-link" routerLink='/upgrade'>Upgrade</a>
+    </li>
+    <li>
+      <!-- On prod this would be a normal link and wouldn't be any loading process between -->
+      <a class="menu-link" href='http://localhost:8080/'>AngularJS</a>
     </li>
     <li routerLinkActive="active">
-      <a class="nav-link" routerLink='/this-is-not-gonna-work' routerLinkActive="active">404 test</a>
+      <a class="menu-link" routerLink='/this-is-not-gonna-work' routerLinkActive="active">404 test</a>
     </li>
   </ul>
 </nav>
