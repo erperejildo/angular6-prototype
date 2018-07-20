@@ -13,6 +13,7 @@
     "bootstrap-css-only": "3.3.6",
     "http-server": "^0.9.0",
     "lodash": "4.13.1",
+    "ngreact": "^0.5.1",
     "normalize.css": "4.1.1"
   },
   "devDependencies": {
