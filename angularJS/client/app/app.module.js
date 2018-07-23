@@ -3,11 +3,12 @@ import "normalize.css";
 import angular from "angular";
 import appComponent from "./app.component";
 import ComponentsModule from "./components/components";
-import reactComponent from "./components/react-component/react-component";
 import { react2angular } from "react2angular";
+import reactUpgrade from "./components/react-upgrade-business/react-upgrade-business";
 
-angular
-    .module("app", [ComponentsModule.name])
-    .component("app", appComponent)
-    .component("reactComponent", react2angular(reactComponent, []));
+
+const angModule = angular.module("app", [ComponentsModule.name]);
+
+angModule.component("app", appComponent);
+angModule.component("reactUpgrade", react2angular(reactUpgrade, []));
 
