@@ -7,5 +7,7 @@ import reactComponent from "./components/react-component/react-component";
 import { react2angular } from "react2angular";
 
 angular
-  .module("app", [ComponentsModule.name])
-  .component("reactComponent", react2angular(reactComponent, []));
+    .module("app", [ComponentsModule.name])
+    .component("app", appComponent)
+    .component("reactComponent", react2angular(reactComponent, []));
+

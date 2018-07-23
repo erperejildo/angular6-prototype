@@ -9,6 +9,6 @@ export default class reactComponent extends React.Component {
   }
 
   render() {
-    return React.DOM.div({}, "This is a react component");
+    return "This is a react component";
   }
 }
