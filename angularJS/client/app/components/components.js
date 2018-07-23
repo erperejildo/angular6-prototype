@@ -1,8 +1,6 @@
+import angular from "angular";
+import reactComponent from "./react-component/react-component";
 
-        import angular from 'angular';
+const ComponentsModule = angular.module("app.components", []);
 
-        const ComponentsModule = angular.module('app.components', [
-
-      ]);
-
-      export default ComponentsModule;
+export default ComponentsModule;
