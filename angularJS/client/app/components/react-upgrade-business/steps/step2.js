@@ -25,6 +25,7 @@ function Step2({ options, chooseOption, nextStep, shown, hidden }) {
             onClick={() => {
               chooseOption(index);
             }}
+            key={index}
           >
             <div className="col-2">
               <div className="form-check">
