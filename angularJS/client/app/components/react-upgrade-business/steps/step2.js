@@ -11,14 +11,14 @@ function Step2({ options, chooseOption, nextStep, shown, hidden }) {
             : "step step2 hidden"
       }
     >
-      <div class="font-xl">Upgrade to business</div>
-      <ul class="space font-s">
+      <div className="font-xl">Upgrade to business</div>
+      <ul className="space font-s">
         <li>FREE 2 x 32kg checked bags</li>
         <li>complimentary food and drinks</li>
         <li>lounge access</li>
       </ul>
 
-      <div class="grid">
+      <div className="grid">
         {options.map((option, index) => {
           return (
             <div
@@ -28,7 +28,7 @@ function Step2({ options, chooseOption, nextStep, shown, hidden }) {
               }}
               key={index}
             >
-              <div class="col col-s">
+              <div className="col col-s">
                 <input
                   className="form-check-input"
                   type="radio"

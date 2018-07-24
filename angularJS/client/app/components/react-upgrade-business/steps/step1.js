@@ -3,7 +3,7 @@ import React from "react";
 function Step1({ nextStep, shown }) {
   return (
     <div className={shown ? "step step1" : "step step1 animated slideOutLeft"}>
-      <div class="font-xxl">
+      <div className="font-xxl">
         Upgrade
         <br />to business
       </div>
