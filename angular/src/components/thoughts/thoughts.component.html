@@ -1,0 +1,25 @@
+<h2>Angular</h2>
+<div class="space">
+  Google doesn't support Angular project integration to old AngularJS. They "force" you to upgrade to the new version (
+<a href="https://angular.io/guide/upgrade" target="_blank">more info</a>).
+</div>
+
+<div class="space">
+  There are
+  <a href="https://stackoverflow.com/questions/41303831/angular2-component-in-angular1-app" target="_blank">some ways</a> to do this but you will find some problems anyway:</div>
+<ul class="circles">
+  <li>No official support</li>
+  <li>Definetely not the easiest and cleanest approach (specially on big projects)</li>
+  <li>Problem to get new dev into a project like that</li>
+  <li>Development time. Probably faster refactoring the actual code and doing a normal upgrade to Angular</li>
+</ul>
+
+<h3 class="mt-5">So what about if we can't upgrade?</h3>
+
+<div class="space">
+  Our approach here was create a totally separete new project. Both of them running at the same time but linked each other.
+<br />
+If you check app.components inside AngularJS project you will see that we are picking the style files from the Angular one (this could be done in the other way around also).
+<br />
+On the same way we linked the menu options (app.component.html) to Angular. This would be replaced using some environment variables to use the real links when we compile the project.
+</div>
