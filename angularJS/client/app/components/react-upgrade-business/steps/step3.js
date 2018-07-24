@@ -7,8 +7,8 @@ function Step3({ shown }) {
         shown ? "step step3 animated slideInRight" : "step step3 hidden"
       }
     >
-      <div class="font-l">Upgrade to business</div>
-      <ul class="font-s space">
+      <div className="font-l">Upgrade to business</div>
+      <ul className="font-s space">
         <li>FREE 2 x 32kg checked bags</li>
         <li>complimentary food and drinks</li>
         <li>lounge access</li>
