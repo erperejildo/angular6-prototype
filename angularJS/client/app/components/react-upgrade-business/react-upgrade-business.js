@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Step1 from "./steps/step1.js";
 import Step2 from "./steps/step2.js";
 import Step3 from "./steps/step3.js";
-import "./upgrade.css";
+import "./upgrade.scss";
 import "animate.css/animate.min.css";
 
 class Upgrade extends Component {
