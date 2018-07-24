@@ -1,0 +1,28 @@
+.hideCheck {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+
+.revealCheck {
+  opacity: 1;
+}
+
+.upgradedMessageHidden {
+  visibility: hidden;
+}
+
+.upgradedMessageShow {
+  visibility: show;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 2.1s;
+}
+
+.check {
+  width: 90px !important;
+  border: 5px solid;
+  border-radius: 50%;
+  padding: 15px;
+  margin-bottom: 5px;
+  transition: 1s;
+  transition-delay: 1.1s;
+}
