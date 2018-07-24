@@ -11,23 +11,24 @@ function Step2({ options, chooseOption, nextStep, shown, hidden }) {
             : "step step2 hidden"
       }
     >
-      <h5>Upgrade to business</h5>
-      <ul className="list-unstyled font-s mt-4">
+      <div class="font-xl">Upgrade to business</div>
+      <ul class="space font-s">
         <li>FREE 2 x 32kg checked bags</li>
         <li>complimentary food and drinks</li>
         <li>lounge access</li>
       </ul>
 
-      {options.map((option, index) => {
-        return (
-          <div
-            className={option.checked ? "row checkedOption" : "row"}
-            onClick={() => {
-              chooseOption(index);
-            }}
-          >
-            <div className="col-2">
-              <div className="form-check">
+      <div class="grid">
+        {options.map((option, index) => {
+          return (
+            <div
+              className={option.checked ? "row active" : "row"}
+              onClick={() => {
+                chooseOption(index);
+              }}
+              key={index}
+            >
+              <div class="col col-s">
                 <input
                   className="form-check-input"
                   type="radio"
@@ -35,26 +36,23 @@ function Step2({ options, chooseOption, nextStep, shown, hidden }) {
                   checked={option.checked}
                 />
               </div>
+
+              <div className="col col-l text-left">{option.option}</div>
+              <div className="col col-m">
+                <span className="font-l">£{option.price}</span>
+                <span className="font-xs">pp</span>
+              </div>
             </div>
-            <div className="col-6 text-left font-s">{option.option}</div>
-            <div className="col-4 text-right">
-              <span className="font-l">£{option.price}</span>
-              <span className="font-xs">pp</span>
-            </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
 
       {options[0].checked || options[1].checked || options[2].checked ? (
-        <button
-          type="button"
-          className="btn btn-light btn-block mt-3"
-          onClick={nextStep}
-        >
+        <button type="button" className="btn space" onClick={nextStep}>
           Upgrade now
         </button>
       ) : (
-        <button type="button" className="btn btn-outline-light btn-block mt-3">
+        <button type="button" className="btn btn-light space">
           I don't want to upgrade
         </button>
       )}
