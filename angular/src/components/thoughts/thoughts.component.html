@@ -26,14 +26,6 @@ If you check app.components out inside AngularJS project you will see that we ar
 On the same way we linked the menu options (app.component.html) to Angular. This would be replaced using some environment variables in order to use the real links when we compile the project.
 </div>
 
-<h3 class="mt-5">Other options</h3>
-<ul class="circles space">
-  <li>AngularJS + Angular: new pages and components using Angular. The main problem here is that we could end up having the same component on 2 different languages if we need new components for AngularJS (we can't have Angular inside AngularJS pages)</li>
-  <li>AngularJS + React: new pages and components using React. The good thing here is tha we could also reuse new components on old pages</li>
-  <li>AngularJS + Angular + React : new pages and components using Angular. For components needed on new and old pages we'd write them using React. This is the option that we implemented here and we consider the best one</li>
-  <li>Angular: everything would be written using the new version. Obviously this would take more time but taking the first option (AngularJS + Angular) should be easier and faster
-</ul>
-
 <h2 class="mt-5">React</h2>
 <div class="space">
   React has a number of qualities which make it relatively easy to integrate into code bases written in other frameworks.
@@ -92,3 +84,11 @@ On the same way we linked the menu options (app.component.html) to Angular. This
   React is a very different way of developing compared to Angular and some elements of it can be confusing coming from Angular.
   React also does a lot behind the scenes and can make some behaviour quite confusing and difficult to debug.
 </div>
+
+<h3 class="mt-5">Other options</h3>
+<ul class="circles space">
+  <li>AngularJS + Angular: new pages and components using Angular. The main problem here is that we could end up having the same component on 2 different languages if we need new components for AngularJS (we can't have Angular inside AngularJS pages)</li>
+  <li>AngularJS + React: new pages and components using React. The good thing here is tha we could also reuse new components on old pages</li>
+  <li>AngularJS + Angular + React : new pages and components using Angular. For components needed on new and old pages we'd write them using React. This is the option that we implemented here and we consider the best one</li>
+  <li>Angular: everything would be written using the new version. Obviously this would take more time but taking the first option (AngularJS + Angular) should be easier and faster
+</ul>
