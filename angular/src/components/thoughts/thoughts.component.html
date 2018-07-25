@@ -1,4 +1,30 @@
-<h2>Angular</h2>
+<h2>PoC</h2>
+<div class="space">
+  The version that we have choosen for this PoC was Angular 6, the latest one at the moment being 1.5 the one chose for the AngularJS project.
+</div>
+<br />
+
+<h3>Why Angular?</h3>
+<div class="space">
+  Angular is one of the biggest framework on the market and this makes Angular stable and professional but <i>With great power comes great responsibility</i>:
+  the learning curve is much bigger compare with other technologies like React in this case. The good point is that we will end up with a real framework on our hands.
+  No reason to install 3rd party libraries or having problem with the offical documentation (or Stackoverflow).
+</div>
+<br />
+
+<h3>So what about if we can't upgrade?</h3>
+<div class="space">
+  It's understandble when we have a big project and we want to move everything to a newer technology face issues like this one.
+  <br />
+  Our approach here was create a totally separete new project (considering that we already had AngularJS working). Both of them running at the same time but linked each other.
+<br />
+If you check app.components out inside AngularJS project you will see that we are picking the style files up from the Angular one (this could be done in the other way around also).
+<br />
+On the same way we linked the menu options (app.component.html) to Angular. This would be replaced using some environment variables in order to use the real links when we compile the project.
+</div>
+<br />
+
+<h3>Angular 6 integration</h3>
 <div class="space">
   Google doesn't support Angular project integration to old AngularJS. They "force" you to upgrade to the new version (
 <a href="https://angular.io/guide/upgrade" target="_blank">more info</a>).
@@ -13,18 +39,6 @@
   <li>Problem to get new devs into a project like that</li>
   <li>Development time. Probably faster refactoring the actual code and doing a normal upgrade to Angular</li>
 </ul>
-
-<h3 class="mt-5">So what about if we can't upgrade?</h3>
-
-<div class="space">
-  It's understandble when we have a big project and we want to move everything to a newer technology face issues like this one.
-  <br />
-  Our approach here was create a totally separete new project (considering that we already had AngularJS working). Both of them running at the same time but linked each other.
-<br />
-If you check app.components out inside AngularJS project you will see that we are picking the style files up from the Angular one (this could be done in the other way around also).
-<br />
-On the same way we linked the menu options (app.component.html) to Angular. This would be replaced using some environment variables in order to use the real links when we compile the project.
-</div>
 
 <h2 class="mt-5">React</h2>
 <div class="space">
