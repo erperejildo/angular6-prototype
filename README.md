@@ -11,5 +11,3 @@ Enter in the different folders to read the documentation and have all of them ru
 - AngularJS 1.5
 - Angular 6
 - React 16.4.1
-
-// TODO
