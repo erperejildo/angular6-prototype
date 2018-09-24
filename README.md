@@ -89,7 +89,7 @@ As well as the benefits mentioned above - flexibility, modularity and scalabilit
   React is a very different way of developing compared to Angular and some elements of it can be confusing coming from Angular. React also does a lot behind the scenes and can make some behaviour quite confusing and difficult to debug.
 
 
-# Other options
+# Framework options
   - AngularJS + Angular: new pages and components using Angular. The main problem here is that we could end up having the same component on 2 different languages if we need new components for AngularJS (we can't have Angular inside AngularJS pages)
   - AngularJS + React: new pages and components using React. The good thing here is tha we could also reuse new components on old pages
   - AngularJS + Angular + React : new pages and components using Angular. For components needed on new and old pages we'd write them using React. This is the option that we implemented here and we consider the best one
