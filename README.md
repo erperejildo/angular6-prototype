@@ -16,7 +16,7 @@ Enter in the different folders to read the documentation and have all of them ru
 
 # Why Angular?
 
-Angular is one of the biggest framework on the market and this makes Angular stable and professional but <i>With great power comes great responsibility:
+Angular is one of the biggest framework on the market and this makes Angular stable and professional but <i>With great power comes great responsibility</i>:
   - The learning curve is much bigger compare with other technologies like React in this case. The good point is that we will end up with a real framework on our hands
   - No reason to install 3rd party libraries or having problem with the offical documentation (or Stackoverflow)
 
